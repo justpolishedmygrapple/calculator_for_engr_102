@@ -34,6 +34,9 @@ def validate_opcode():
         if z == 1 or z == 2 or z == 3 or z == 4 or z == 5:
             opcode = int(opcode)
             return opcode
+        else:
+            print("enter a value opcode you silly gööse")
+            return validate_opcode()
     except ValueError:
         print("enter a valid opcode you silly gööse")
         return validate_opcode()
