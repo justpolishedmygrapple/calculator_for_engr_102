@@ -23,7 +23,7 @@ def validate_opcode():
             print("enter a valid opcode you silly gööse")
             return validate_opcode()
     except ValueError:
-        print("enter a valid opcode")
+        print("enter a valid opcode you silly gööse")
         return validate_opcode()
 def validate_wyl():
     would_you_like = input("Would you like to use the calculator again: ")
