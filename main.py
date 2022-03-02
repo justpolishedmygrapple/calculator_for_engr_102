@@ -11,13 +11,13 @@ def validate_num():
         print("Enter a valid number you silly gööse")
         return validate_num()
 def validate_opcode():
-    opcode = input("Enter opcode fron 0-3: ")
+    opcode = input("Enter opcode fron 0-4: ")
     try:
         z = int(opcode)
         int(opcode)
         if not int(opcode):
             return validate_opcode()
-        if z == 0 or z == 1 or z == 2 or z == 3:
+        if z == 0 or z == 1 or z == 2 or z == 3 or z == 4:
             return int(opcode)
         else:
             print("enter a valid opcode you silly gööse")
@@ -50,4 +50,6 @@ while would_you_like == "yes":
         print(first_num * second_num)
     if opcode == 3:
         print(first_num / second_num)
+    if opcode == 4:
+        print(first_num ** second_num)
     would_you_like = validate_wyl()
