@@ -35,7 +35,7 @@ def validate_wyl():
     else:
         print("enter yes or no you silly gööse")
         return validate_wyl()
-print("opcodes: 0 is addition, 1 is subtraction, 2 is multiplication, 3 is division\n")
+print("opcodes: 0 is addition, 1 is subtraction, 2 is multiplication, 3 is division, 4 is exponentiation\n")
 would_you_like = "yes"
 while would_you_like == "yes":
     first_num = validate_num()
