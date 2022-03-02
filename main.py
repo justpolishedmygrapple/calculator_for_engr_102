@@ -1,15 +1,21 @@
 def validate_num():
-    num = input("number: ")
+    num = input("enter a real or complex number: ")
     try:
         float(num)
-        if not float(num):
-            return validate_num()
-        else:
+        if float(num):
             num = float(num)
             return num
     except ValueError:
-        print("Enter a valid number you silly gööse")
+        pass
+    try:
+        complex(num)
+        if complex(num):
+            num = complex(num)
+            return num
+    except ValueError:
+        print("Enter a valid real or complex number you silly gööse")
         return validate_num()
+
 def validate_opcode():
     opcode = input("Enter opcode from 1-5: ")
     try:
