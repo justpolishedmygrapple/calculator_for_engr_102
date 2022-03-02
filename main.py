@@ -1,3 +1,10 @@
+##Author:   Austin Mangel
+##Github:   justpolishedmygrapple
+##Date:     1 March 2022
+##Descrip:  Calculator that takes two numbers, real or complex, from a user and performs mathematical operations
+##          based off of the given operation code. Validates all three user inputs.
+
+
 def validate_num():
     num = input("enter a real or complex number: ")
     try:
